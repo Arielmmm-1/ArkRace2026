@@ -1,5 +1,6 @@
 # Ark_Race2026
 2026第五届方舟计划机器人大赛自述留档
+
 <img width="388" height="291" alt="image" src="https://github.com/user-attachments/assets/e4b470f6-d2f5-4689-8a26-201f5c9b24f3" />
 ## 废话
 虽然这东西像破烂,但确实是我想出来的,但只停在想象,没考虑实际就直接做了,吸取教训吧🤫
