@@ -1,6 +1,8 @@
 # Ark_Race2026
 <img width="388" height="291" alt="image" src="https://github.com/user-attachments/assets/e4b470f6-d2f5-4689-8a26-201f5c9b24f3" />
+
 2026第五届方舟计划机器人大赛自述留档
+
 ## 废话
 虽然这东西像破烂,但确实是我想出来的,但只停在想象,没考虑实际就直接做了,吸取教训吧🤫
 
@@ -44,6 +46,7 @@
 - 核心痛点：麦轮全向解算极度依赖结构刚性，形变误差软件完全无法补偿
 - 经验总结：平板底盘仅适合小型轻量化小车，应该考虑采用铝型材框架的
 <img width="448" height="240" alt="image" src="https://github.com/user-attachments/assets/d2f461b4-ce86-4eab-b050-d4a904efe003" />
+
 ### 附件可参考设计
 <img width="271" height="214" alt="image" src="https://github.com/user-attachments/assets/07f1d5b9-a204-4670-9f92-06b5fc28cd52" />
 <img width="319" height="212" alt="image" src="https://github.com/user-attachments/assets/027aa8c9-495c-43aa-aa98-224ed409633f" />
@@ -71,6 +74,7 @@
 - 将传送驱动轴居中布置，右侧改为纯支撑光轴，弱化单边倾覆力
 - 单根导向杆采用双滑块/四滑块到龙门架的结构，大幅提升承载稳定性
 <img width="408" height="197" alt="image" src="https://github.com/user-attachments/assets/262ab4a2-e309-4d43-96bc-34c25419f43c" />
+
 ### 附件可参考设计
 <img width="178" height="127" alt="image" src="https://github.com/user-attachments/assets/fc0cc52e-49ef-4b24-a199-ab001d493d93" />
 <img width="132" height="152" alt="image" src="https://github.com/user-attachments/assets/b6e811ba-addb-411c-bac9-15955f839b2d" />
