@@ -1,0 +1,3 @@
+ResetServo	上电自动复位
+Servo		循环让舵机从 0 度到 180 度，每隔 10 度转一次
+MoreServo   多舵机控制

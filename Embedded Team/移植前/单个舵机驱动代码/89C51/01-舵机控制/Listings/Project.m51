@@ -1,0 +1,162 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/13/2025  17:01:01  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\Project PRINT (.\Listings\Project.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?SIDIV)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  .\Objects\Project (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0006H     UNIT         ?DT?MAIN
+            IDATA   000EH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     0008H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+            CODE    000EH     008CH     UNIT         ?C_C51STARTUP
+            CODE    009AH     008BH     UNIT         ?C?LIB_CODE
+            CODE    0125H     0045H     UNIT         ?PR?TIMER0_ISR?MAIN
+            CODE    016AH     0033H     UNIT         ?PR?_DELAY_MS?MAIN
+            CODE    019DH     0020H     UNIT         ?PR?_SET_SERVO_ANGLE?MAIN
+            CODE    01BDH     001AH     UNIT         ?PR?MAIN?MAIN
+            CODE    01D7H     0014H     UNIT         ?PR?TIMER0_INIT?MAIN
+            CODE    01EBH     000DH     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\Project (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?TIMER0_INIT?MAIN
+  +--> ?PR?_SET_SERVO_ANGLE?MAIN
+  +--> ?PR?_DELAY_MS?MAIN
+
+?PR?_DELAY_MS?MAIN
+  +--> ?PR?_SET_SERVO_ANGLE?MAIN
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/13/2025  17:01:01  PAGE 2
+
+
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Project (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  B:00A8H.7       PUBLIC        EA
+  B:0090H.0       PUBLIC        SERVO
+  C:0125H         PUBLIC        timer0_ISR
+  C:01BDH         PUBLIC        main
+  C:017FH         PUBLIC        _Delay_ms
+  D:0089H         PUBLIC        TMOD
+  D:0008H         PUBLIC        high_01ms
+  B:00A8H.1       PUBLIC        ET0
+  C:019DH         PUBLIC        _set_servo_angle
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  B:0088H.4       PUBLIC        TR0
+  D:000AH         PUBLIC        cnt_01ms
+  C:01D7H         PUBLIC        timer0_init
+  D:000CH         PUBLIC        reload
+  -------         PROC          L?0021
+  -------         ENDPROC       L?0021
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        ms
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:017FH         LINE#         21
+  C:017FH         LINE#         22
+  C:017FH         LINE#         24
+  C:0188H         LINE#         25
+  C:019CH         LINE#         26
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _SET_SERVO_ANGLE
+  D:0007H         SYMBOL        angle
+  D:0005H         SYMBOL        max_angle
+  C:019DH         LINE#         31
+  C:019DH         LINE#         32
+  C:019DH         LINE#         33
+  C:01A4H         LINE#         37
+  C:01BCH         LINE#         38
+  -------         ENDPROC       _SET_SERVO_ANGLE
+  -------         PROC          TIMER0_ISR
+  C:0125H         LINE#         43
+  C:0130H         LINE#         45
+  C:0134H         LINE#         46
+  C:0137H         LINE#         48
+  C:0149H         LINE#         49
+  C:014FH         LINE#         51
+  C:0161H         LINE#         52
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/13/2025  17:01:01  PAGE 3
+
+
+  -------         ENDPROC       TIMER0_ISR
+  -------         PROC          TIMER0_INIT
+  C:01D7H         LINE#         57
+  C:01D7H         LINE#         58
+  C:01D7H         LINE#         59
+  C:01DAH         LINE#         60
+  C:01DDH         LINE#         62
+  C:01E1H         LINE#         63
+  C:01E4H         LINE#         65
+  C:01E6H         LINE#         66
+  C:01E8H         LINE#         67
+  C:01EAH         LINE#         68
+  -------         ENDPROC       TIMER0_INIT
+  -------         PROC          MAIN
+  C:01BDH         LINE#         73
+  C:01BDH         LINE#         74
+  C:01BDH         LINE#         75
+  C:01C0H         LINE#         76
+  C:01C7H         LINE#         78
+  C:01C7H         LINE#         79
+  C:01C7H         LINE#         81
+  C:01CBH         LINE#         82
+  C:01CEH         LINE#         83
+  C:01D2H         LINE#         84
+  C:01D5H         LINE#         85
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?SIDIV
+  C:009AH         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+  -------         MODULE        ?C?UIDIV
+  C:00D0H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+Program Size: data=15.0 xdata=0 code=496
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
